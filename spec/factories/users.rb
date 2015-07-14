@@ -1,17 +1,22 @@
 FactoryGirl.define do
   factory :user do
-    first_name "MyString"
-last_name "MyString"
-email "MyString"
-password_digest "MyString"
-phone_number "MyString"
-sex "MyString"
-birthdate_1 1
-birthdate_2 1
-birthdate_3 1
-description "MyText"
-remember_token "MyString"
-photo_url "MyString"
-  end
+    first_name Faker::Name.first_name
+    last_name Faker::Name.last_name
+    email Faker::Internet.email
+    password 'secret'
+    pssword_confirmation 'secret'
 
+    factory :full_info do
+      sex 'male'
+      birthdate_1 12
+      birthdate_2 30
+      birthdate_3 1990
+      description Faker::Lorem.paragraph
+      photo_url Faker::Avatar.image
+    end
+
+    factory :invalid_user do
+      first_name nil
+    end
+  end
 end

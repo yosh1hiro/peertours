@@ -1,0 +1,28 @@
+= form_for @user do |f|
+  - if @user.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user     from being saved:"
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+
+  %form.form-horizontal
+    %fieldset
+      %legend Create User
+      .form-group
+        = f.label :last_name, class: "col-lg-2 control-label"
+        = f.text_field :last_name, placeholder: "Last name", class: "form-control"
+      .form-group
+        = f.label :first_name, class: "col-lg-2 control-label"
+        = f.text_field :first_name, placeholder: "First name", class: "form-control"
+      .form-group
+        = f.label :email, class: "col-lg-2 control-label"
+        = f.email_field :email, placeholder: "Email", class: "form-control"
+      .form-group
+        = f.label :password, class: "col-lg-2 control-label"
+        = f.password_field :password, placeholder: "password", class: "form-control"
+      .form-group
+        = f.label :password_confirmation, class: "col-lg-2 control-label"
+        = f.password_field :password_confirmation, placeholder: "password confirmation", class: "form-control"
+      .form-group
+        = f.submit 'Submit', class: "btn btn-primary"
