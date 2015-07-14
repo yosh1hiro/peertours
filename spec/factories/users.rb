@@ -4,7 +4,7 @@ FactoryGirl.define do
     last_name Faker::Name.last_name
     email Faker::Internet.email
     password 'secret'
-    pssword_confirmation 'secret'
+    password_confirmation 'secret'
 
     factory :full_info do
       sex 'male'
