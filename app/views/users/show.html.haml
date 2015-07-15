@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @user.first_name
+%p
+  %b Last name:
+  = @user.last_name
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Password digest:
+  = @user.password_digest
+%p
+  %b Phone number:
+  = @user.phone_number
+%p
+  %b Sex:
+  = @user.sex
+%p
+  %b Birthdate 1:
+  = @user.birthdate_1
+%p
+  %b Birthdate 2:
+  = @user.birthdate_2
+%p
+  %b Birthdate 3:
+  = @user.birthdate_3
+%p
+  %b Description:
+  = @user.description
+%p
+  %b Remember token:
+  = @user.remember_token
+%p
+  %b Photo url:
+  = @user.photo_url
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path
