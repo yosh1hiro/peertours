@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Host:
+  = @tour.host_id
+%p
+  %b Name:
+  = @tour.name
+%p
+  %b Outline:
+  = @tour.outline
+%p
+  %b Description:
+  = @tour.description
+%p
+  %b Minimum number:
+  = @tour.minimum_number
+%p
+  %b Maximum number:
+  = @tour.maximum_number
+%p
+  %b Rendezvous:
+  = @tour.rendezvous
+
+= link_to 'Edit', edit_tour_path(@tour)
+\|
+= link_to 'Back', tours_path

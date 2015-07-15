@@ -1,0 +1,33 @@
+%h1 Listing tours
+
+%table
+  %thead
+    %tr
+      %th Host
+      %th Name
+      %th Outline
+      %th Description
+      %th Minimum number
+      %th Maximum number
+      %th Rendezvous
+      %th
+      %th
+      %th
+
+  %tbody
+    - @tours.each do |tour|
+      %tr
+        %td= tour.host_id
+        %td= tour.name
+        %td= tour.outline
+        %td= tour.description
+        %td= tour.minimum_number
+        %td= tour.maximum_number
+        %td= tour.rendezvous
+        %td= link_to 'Show', tour
+        %td= link_to 'Edit', edit_tour_path(tour)
+        %td= link_to 'Destroy', tour, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Tour', new_tour_path
