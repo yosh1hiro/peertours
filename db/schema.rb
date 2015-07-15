@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715200404) do
+ActiveRecord::Schema.define(version: 20150715200623) do
+
+  create_table "tour_categories", force: :cascade do |t|
+    t.integer  "tour_id",    limit: 4
+    t.string   "category",   limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "tour_flows", force: :cascade do |t|
     t.integer  "tour_id",    limit: 4
