@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'users#new'  # 仮のroot_url
 
-  get 'signup', to: 'user#new', as: :signup
-  get 'signin', to: 'sessions#new', as: :signin
-  delete 'signout', to: 'sessions#destroy', as: :signout
+  get '/signup', to: 'users#new', as: :signup
+  get '/signin', to: 'sessions#new', as: :signin
+  get '/signout', to: 'sessions#destroy', as: :signout
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]

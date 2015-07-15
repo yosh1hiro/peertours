@@ -10,19 +10,19 @@
     %fieldset
       %legend Create User
       .form-group
-        = f.label :last_name, class: "col-lg-2 control-label"
-        = f.text_field :last_name, placeholder: "Last name", class: "form-control"
-      .form-group
         = f.label :first_name, class: "col-lg-2 control-label"
         = f.text_field :first_name, placeholder: "First name", class: "form-control"
       .form-group
+        = f.label :last_name, class: "col-lg-2 control-label"
+        = f.text_field :last_name, placeholder: "Last name", class: "form-control"
+      .form-group
         = f.label :email, class: "col-lg-2 control-label"
         = f.email_field :email, placeholder: "Email", class: "form-control"
-      .form-group
+      #password.form-group
         = f.label :password, class: "col-lg-2 control-label"
-        = f.password_field :password, placeholder: "password", class: "form-control"
-      .form-group
+        = f.password_field :password, placeholder: "Password", class: "form-control"
+      #password_confirmation.form-group
         = f.label :password_confirmation, class: "col-lg-2 control-label"
-        = f.password_field :password_confirmation, placeholder: "password confirmation", class: "form-control"
+        = f.password_field :password_confirmation, placeholder: "Password confirmation", class: "form-control"
       .form-group
-        = f.submit 'Submit', class: "btn btn-primary"
+        = f.submit 'Sign up', class: "btn btn-primary"
