@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715200623) do
+ActiveRecord::Schema.define(version: 20150715201021) do
 
   create_table "tour_categories", force: :cascade do |t|
     t.integer  "tour_id",    limit: 4
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20150715200623) do
     t.text     "flow",       limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+  end
+
+  create_table "tour_prices", force: :cascade do |t|
+    t.integer  "tour_id",    limit: 4
+    t.integer  "number",     limit: 4
+    t.integer  "price",      limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "tour_rules", force: :cascade do |t|
