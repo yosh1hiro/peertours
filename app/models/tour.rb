@@ -6,4 +6,11 @@ class Tour < ActiveRecord::Base
   has_many :tour_categories, inverse_of: :tour, dependent: :destroy
   has_many :tour_prices, inverse_of: :tour, dependent: :destroy
   has_many :tour_photos, inverse_of: :tour, dependent: :destroy
+
+  validates :name, length: { in: 10..100 }
+  validates :outline, length: { in: 100.. 1000 }
+  validates :description, length: { in: 100..5000 }
+  validates :minimum_number, presence: true
+  validates :maximum_number, presence: true
+  validates :rendezvous, presence: true
 end
