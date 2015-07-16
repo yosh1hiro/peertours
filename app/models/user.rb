@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
   validates :password, length: { minimum: 6 , maximum: 14}
 
-  has_many :places, foreign_key: :host_id, dependent: :destroy
+  has_many :tours, foreign_key: :host_id, dependent: :destroy
 
   has_secure_password
 
