@@ -56,7 +56,7 @@ class ToursController < ApplicationController
   def destroy
     @tour.destroy
     respond_to do |format|
-      format.html { redirect_to tours_url, notice: 'Tour was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'Tour was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

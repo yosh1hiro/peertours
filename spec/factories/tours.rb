@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :tour do
-    association :host, factory: :user
+    association :host, factory: :User
     name 'Traditional Asakusa in Beautiful Kimono'
     outline 'Wear the kimono (traditional Japanese costume) and feel transformed into the world of Japanese arts and culture'
     description 'Take a walk around Asakusa area and visit traditional temples. If time permits, walk over to Sumikawa River and look at the Skytree, landmark of Tokyo'
