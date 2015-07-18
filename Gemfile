@@ -38,6 +38,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'fog'
 gem 'carrierwave'
 
+gem 'nested_form_fields'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
