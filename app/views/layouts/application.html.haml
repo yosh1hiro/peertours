@@ -10,6 +10,7 @@
     /[if lt IE 9]
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
     = stylesheet_link_tag "readable", :media => "all"
+    = javascript_include_tag "application", 'data-turbolinks-track' => true
     = yield(:page_stylesheet) if content_for?(:page_stylesheet)
 
 
