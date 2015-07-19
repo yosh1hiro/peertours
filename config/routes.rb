@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :references
   resources :reviews
   resources :reservations
   root 'home#index'

@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719064714) do
+ActiveRecord::Schema.define(version: 20150719065520) do
+
+  create_table "payments", force: :cascade do |t|
+    t.integer  "amount",         limit: 4
+    t.integer  "reservation_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "references", force: :cascade do |t|
+    t.integer  "request_id",   limit: 4
+    t.text     "body",         limit: 65535
+    t.string   "relationship", limit: 255
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
 
   create_table "reservations", force: :cascade do |t|
     t.integer  "guest_id",         limit: 4
@@ -21,6 +36,16 @@ ActiveRecord::Schema.define(version: 20150719064714) do
     t.integer  "guest_number",     limit: 4
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "trip_id",    limit: 4
+    t.integer  "user_id",    limit: 4
+    t.integer  "tour_id",    limit: 4
+    t.text     "body",       limit: 65535
+    t.integer  "rating",     limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "tour_categories", force: :cascade do |t|

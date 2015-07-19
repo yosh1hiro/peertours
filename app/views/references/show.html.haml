@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Request:
+  = @reference.request_id
+%p
+  %b Body:
+  = @reference.body
+%p
+  %b Relationship:
+  = @reference.relationship
+
+= link_to 'Edit', edit_reference_path(@reference)
+\|
+= link_to 'Back', references_path
