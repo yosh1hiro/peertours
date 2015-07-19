@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Guest:
+  = @reservation.guest_id
+%p
+  %b Tour:
+  = @reservation.tour_id
+%p
+  %b Appointment date:
+  = @reservation.appointment_date
+%p
+  %b Status:
+  = @reservation.status
+%p
+  %b Guest number:
+  = @reservation.guest_number
+
+= link_to 'Edit', edit_reservation_path(@reservation)
+\|
+= link_to 'Back', reservations_path

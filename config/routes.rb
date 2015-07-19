@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reservations
   root 'home#index'
 
   get '/signup', to: 'users#new', as: :signup
