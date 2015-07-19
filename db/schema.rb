@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719065908) do
+ActiveRecord::Schema.define(version: 20150719070041) do
+
+  create_table "message_threads", force: :cascade do |t|
+    t.integer  "host_id",    limit: 4
+    t.integer  "guest_id",   limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "messages", force: :cascade do |t|
     t.integer  "sender_id",         limit: 4
