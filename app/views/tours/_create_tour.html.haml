@@ -33,11 +33,8 @@
         = f.text_field :rendezvous, class: "col-lg-2 control-label"
 
       .form-group
-        = f.nested_fields_for :tour_flows do |tf|
-          = tf.remove_nested_fields_link 'Remove', class: 'btn btn-danger', role: 'button'
-          = tf.text_area :flow
-        // = render partial: "tour_flow_fields", locals: { tf: tf }
-        = f.add_nested_fields_link :tour_flows, 'Add tour flow', class: 'btn btn-primary', role: 'button'
+       //  = render partial: "tour_flow_fields", locals: { tf: tf }
+
 
       .form-group
         = f.submit 'Create', class: "btn btn-primary"
