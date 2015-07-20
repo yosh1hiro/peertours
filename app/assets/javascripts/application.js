@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-//= require nested_form_fields
+//= require_tree .
+//= require jquery.turbolinks
