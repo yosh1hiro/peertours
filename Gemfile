@@ -11,11 +11,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'twitter-bootswatch-rails', '~> 3.1.1'
-gem 'twitter-bootswatch-rails-helpers'
-gem 'execjs'
-gem 'less-rails'
 gem 'therubyracer', platforms: :ruby # javascript runtime。lessをコンパイルす>るために必要
+gem 'twitter-bootstrap-rails' # Bootstrapの本体
+
 gem 'haml-rails'
 gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれてい>るため
 gem 'kaminari'
@@ -35,8 +33,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'fog'
 gem 'carrierwave'
-
-gem 'nested_form_fields'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

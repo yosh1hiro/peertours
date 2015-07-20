@@ -285,8 +285,6 @@ GEM
     multi_json (1.11.2)
     mysql2 (0.3.18)
     nenv (0.2.0)
-    nested_form_fields (0.7)
-      rails (>= 3.2.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
@@ -430,12 +428,11 @@ GEM
     timecop (0.7.4)
     turbolinks (2.5.3)
       coffee-rails
-    twitter-bootswatch-rails (3.1.1.1)
-      execjs (>= 1.4.0)
-      less-rails (>= 2.3)
-      railties (>= 3.1)
-    twitter-bootswatch-rails-helpers (3.1.0.0)
-      twitter-bootswatch-rails (~> 3.1.0)
+    twitter-bootstrap-rails (3.2.0)
+      actionpack (~> 4.1)
+      execjs (~> 2.2)
+      rails (~> 4.1)
+      railties (~> 4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -463,7 +460,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   database_cleaner
   database_rewinder
-  execjs
   factory_girl_rails
   faker
   fog
@@ -479,7 +475,6 @@ DEPENDENCIES
   launchy
   less-rails
   mysql2
-  nested_form_fields
   pry-byebug
   pry-doc
   pry-rails
@@ -501,6 +496,5 @@ DEPENDENCIES
   thin
   timecop
   turbolinks
-  twitter-bootswatch-rails (~> 3.1.1)
-  twitter-bootswatch-rails-helpers
+  twitter-bootstrap-rails
   uglifier (>= 1.3.0)
