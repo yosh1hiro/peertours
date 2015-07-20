@@ -34,7 +34,10 @@
         = f.text_field :rendezvous, class: "form-control"
 
       .form-group
-          // = render partial: "tour_flow_fields", locals: { tf: tf }
+        = f.label :tour_flows
+        = f.fields_for :tour_flows do |builder|
+          = render "tour_flow_fields", f: builder
+        = link_to_add_fields "Add flow", f, :tour_flows
 
       .form-group
         = f.submit 'Create', class: "btn btn-primary"
