@@ -3,3 +3,28 @@
     display: none !important;
   }
 }
+
+.footer-container {
+  background: #363839;
+  padding: 30px 0;
+  h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    &> li a{
+      color: #A1A9AD;
+      font-size: 11px;
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+  }
+  hr.footer-divider {
+    border-top: 1px solid #4b4c4d;
+  }
+}

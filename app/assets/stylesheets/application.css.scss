@@ -17,4 +17,8 @@
  *= require_tree .
  */
 
+@import "mixins/space";
+@import "base";
 @import "shared/footer";
+
+@include make-space;

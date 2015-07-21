@@ -1,0 +1,10 @@
+@mixin make-space($i: 1) {
+  @for $i from 1 through 8 {
+    .row-space-#{$i} {
+      margin-bottom: (6.25px * $i);
+    }
+    .row-space-top-#{$i} {
+      margin-top: (6.25px * $i);
+    }
+  }
+}

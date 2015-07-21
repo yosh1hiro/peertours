@@ -1,17 +1,44 @@
 %footer#footer.footer-container
   .container-fluid
     .row
-      .col-md-3.hide-sm
-        %h2 Company
+      .col-md-3
+        %h2.hide-sm Company
         %ul
           %li 
-            =link_to "About", root_path
+            =link_to "About", about_path
+          %li
+            =link_to "Terms & Conditions", terms_path
+          %li
+            =link_to "Privacy Policy", privacy_path
       .col-md-3.hide-sm
+        %h2 For Travellers
         %ul
           %li
-            =link_to "Home", root_path
+            =link_to "How it Works", how_it_works_path
+          %li
+            =link_to "Why PeerTours?", why_peertours_path
+          %li
+            =link_to "Cancellation Policies", cancellation_policies_path
+          %li
+            =link_to "FAQ for Travellers", help_for_travellers_path
       .col-md-3.hide-sm
+        %h2 For Guides
         %ul
           %li
-            =link_to "Home", root_path
-      .col-md-3
+            =link_to "Why become a guide?", why_guide_path
+          %li
+            =link_to "Become a guide", become_guide_path
+          %li
+            =link_to "FAQ for Guides", help_for_guides_path
+      .col-md-3.hide-sm
+        %h2 Social
+        %ul
+          %li
+            %a Twitter
+          %li
+            %a Facebook
+          %li
+            %a Blog
+    %hr.footer-divider.row-space-top-8.row-space-4.hide-sm
+    .text-center
+      .row-space-top-2.text-muted © RisingAsia, Inc.
