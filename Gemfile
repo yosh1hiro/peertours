@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby # javascript runtime。lessをコンパイルす>るために必要
 gem 'bootstrap-sass' # Bootstrapの本体
+gem "font-awesome-rails"
 
 gem 'haml-rails'
 gem 'kaminari'
