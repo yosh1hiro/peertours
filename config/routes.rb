@@ -13,6 +13,18 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :tours
 
+  scope path: '/', controller: :home do
+    get 'about', action: :about
+    get 'cancellation-policies', action: :cancellation_policies
+    get 'terms', action: :terms
+    get 'privacy', action: :privacy
+    get 'help', action: :help
+    get 'how-it-works', action: :how_it_works
+    get 'why-host', action: :why_host
+  end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
