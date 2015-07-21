@@ -7,4 +7,13 @@ module ApplicationHelper
     end
     link_to(name, '#', class: "add_fields", data: {id: id, fields: fields.gsub("\n", "")})
   end
+
+  def title
+    base_site_title = I18n.t "titles.helpers.application.base_site_title"
+    if @title.nil?
+      "#{base_site_title}"
+    else
+      "#{@title} | #{base_site_title}"
+    end
+  end
 end
