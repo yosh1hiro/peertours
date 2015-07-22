@@ -18,8 +18,9 @@
     &> li a{
       color: #A1A9AD;
       font-size: 11px;
-      &:hover {
-        text-decoration: none;
+      background: none;
+      &:hover, &:active {
+        text-decoration: underline;
       }
 
     }
@@ -27,4 +28,5 @@
   hr.footer-divider {
     border-top: 1px solid #4b4c4d;
   }
+
 }

@@ -1,0 +1,23 @@
+header {
+  &.active {
+    background-color: #fff;
+    height: auto;
+    min-height: 60px;
+  }
+  #logo {
+    background: url(image-path('temp_logo.png')) no-repeat center scroll;
+    width: 136px;
+    height: 32px;
+    vertical-align: middle;
+    text-indent: -9999px;
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}

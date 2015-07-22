@@ -24,7 +24,7 @@ class HomeController < ApplicationController
   end
 
   def help_for_guides
-    @title = "Help for Travellers"
+    @title = "Help for Guides"
   end
 
   def how_it_works
@@ -36,7 +36,7 @@ class HomeController < ApplicationController
   end
 
   def why_guide
-    @title = "Why Become a Host"
+    @title = "Why Become a Guide"
   end
 
   def become_guide
