@@ -1,3 +1,45 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-image {
+  width: 1000px;
+  height: 510px;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(image-path('top-image.jpg')) no-repeat center scroll;
+  padding-top: 200px;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 0px; // bootstrapのnavbarの処理を上書き
+}
+
+.contents {
+  
+}
+
+.title {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
+  font-size: 40px;
+  padding: 15px 0px;
+}
+
+.how-to-use {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 20px;
+  width: 140px;
+  border: 2px solid #fff;
+}
+
+.search-tours {
+  color: #000;
+}
+
+.submit {
+  width: 100px;
+  height: 24px;
+  color: #fff;
+  background-color: #BF1329;
+  border: 0px solid #fff;
+  border-bottom: 3px solid #9A0E21;
+  margin-top: 60px;
+}

@@ -1,2 +1,22 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+
+.container
+  .row
+    .top-image.text-center
+      .contents
+        .title
+          Omotenashi Experience in Japan
+        .how-to-use
+          How to use
+        %form.search-tours{:action => "/", :method => "get"}
+          %input{:name => "category", :size => "20"}
+          %input{:name => "area", :size => "16"}
+          %select{:name => "num"}
+          %input.submit{:type => "submit", :value => "Search"}
+  .row
+    .gallery
+  .row
+    .category
+  .row
+    .area
+  .row
+    .new-experience
