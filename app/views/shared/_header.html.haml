@@ -1,6 +1,6 @@
 .header-wrapper
   %header.regular-header.active
-    %nav.navbar.navbar-default
+    %nav.navbar.navbar-default.header-nav
       .container-fluid
         .navbar-header
           %button{ class: "navbar-toggle toggle-custom", type: "button", id: "navbar-toggle", "data-toggle" => "collapse", "data-target" => "#navbar"}
@@ -15,3 +15,4 @@
             - else
               %li= link_to "Sign In", signin_path
               %li= link_to "Sign Up", signup_path
+              %li= link_to "Become a Guide", signup_path, class: "button red"

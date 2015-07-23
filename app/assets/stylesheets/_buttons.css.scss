@@ -1,0 +1,24 @@
+.button {
+  transition: all 0.2s ease-in-out !important;
+}
+
+a.button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #cfcfcf;
+  padding: 5px 10px !important;
+  font-family: "Avenir Next","AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a.button.red, a.button.red {
+  border-color: #db4c3a;
+  color: #db4c3a;
+  &:hover, &:active, &:focus {
+    background-color: #db4c3a;
+    color: #fff;
+  }
+}
+
+.navbar-default .navbar-nav > li > a.button.red {
+  top: 15px;
+}
