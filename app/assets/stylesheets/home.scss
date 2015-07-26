@@ -31,7 +31,7 @@
   padding: 15px 0px;
 }
 
-a.white {
+a.button.white {
   color: #ffffff;
   &:hover {
     text-decoration: none;
@@ -67,9 +67,10 @@ a.white {
 .section-image {
   padding: 2px;
   border: 1px solid #db4c3a;
+  margin: 2px;
 }
 
-a:hover {
+a.link-transparent:hover {
   text-decoration: none;
   background-color: transparent;
 }
