@@ -1,15 +1,11 @@
-.test {
-  background-color: #db4c3a;
-  border: 1px solid #fff;
-}
-
 .top-image {
   width: 100%;
   // height: 510px;
   margin: 0 auto;
-  padding: 150px 0px 100px 0px;
+  padding: 10% 0px 100px 0px;
   background-image: url(image-path('top-image.jpg'));
-  background-size: cover;
+  background-size: 100%;
+  background-repeat:no-repeat;
   color: #fff;
 }
 
@@ -17,23 +13,10 @@
   margin-bottom: 0px; // bootstrapのnavbarの処理を上書き
 }
 
-
-.contents {
-  
-}
-
 .main-hero {
   h4.sub-title {
     font-size: 20px;
   }
-}
-
-.title {  
-  // font-size: 40px;
-  // height: auto;
-  margin-bottom: 40px;
-  font-size: 40px;
-  padding: 15px 0px;
 }
 
 a.button.white {
@@ -67,6 +50,7 @@ a.button.white {
 
 .section-title {
   text-align: center;
+  margin-top: 60px;
 }
 
 .section-image {
@@ -78,4 +62,88 @@ a.button.white {
 a.link-transparent:hover {
   text-decoration: none;
   background-color: transparent;
+}
+
+/*
+.experience-info {
+  margin: 10px 0px;
+}
+
+.experience-detail {
+  height: 51px;
+  word-wrap: break-word;
+}
+
+.experience-area {
+  height: 30px;
+  color: #fff;
+  background-color: #A6A68F;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.guide-pic-size {
+  width: 81px;
+  height: 81px;
+}
+
+.right-box {
+  
+}
+*/
+
+.row-1st {
+    position: relative;
+     > img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.row-1st-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    > div {
+        // width: 90%;
+        max-width: 320px;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.4;
+        padding: 4px 10px;
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: rgba(0,0,0,0.4);
+    }
+}
+ 
+@media only screen and (max-width: 480px) {
+    .row-1st {
+        overflow: scroll;
+    }
+    .row-1st-in {
+        width: 100%;
+    }  
+}
+
+.more-button {
+  width: 240px;
+  height: 40px;
+  margin: 60px auto 100px auto;
+  background-color: #BF1329;
+  border: 0px solid #fff;
+  border-bottom: 3px solid #9A0E21;
+}
+
+.button-text {
+  padding-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
 }
