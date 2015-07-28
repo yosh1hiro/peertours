@@ -1,0 +1,25 @@
+%h1 Listing references
+
+%table
+  %thead
+    %tr
+      %th Request
+      %th Body
+      %th Relationship
+      %th
+      %th
+      %th
+
+  %tbody
+    - @references.each do |reference|
+      %tr
+        %td= reference.request_id
+        %td= reference.body
+        %td= reference.relationship
+        %td= link_to 'Show', reference
+        %td= link_to 'Edit', edit_reference_path(reference)
+        %td= link_to 'Destroy', reference, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Reference', new_reference_path

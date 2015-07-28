@@ -1,0 +1,34 @@
+.col-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-lg-6.col-center {
+  min-width: 400px;
+}
+
+.auth-content-wrapper {
+  box-shadow: 0 3px 7px rgba(0,0,0,.12);
+  border: 1px solid #ccd1d6;
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 40px auto;
+  position: relative;
+  .auth-form-wrapper {
+    padding: 20px 40px;
+  }
+  .form-header {
+    margin-bottom: 20px;
+  }
+  h3.form-title {
+    font-weight: 400;
+    font-size: 30px;
+    color: inherit;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

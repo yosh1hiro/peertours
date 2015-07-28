@@ -1,0 +1,24 @@
+.header-wrapper
+  %header.regular-header.active
+    %nav.navbar.navbar-default.header-nav
+      .container-fluid
+        .navbar-header
+          %button{ class: "navbar-toggle toggle-custom", type: "button", id: "navbar-toggle", "data-toggle" => "collapse", "data-target" => "#navbar"}
+            %span.fa.fa-bars
+          =link_to root_path do
+            #logo{alt: "PeerTours Logo"}
+        #navbar.navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            - if signed_in?
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  = current_user.first_name
+                  %b.caret.white-caret
+                %ul.dropdown-menu
+                  %li= link_to "Profile", current_user
+                  %li.menu-divider
+                  %li= link_to "Sign out", signout_path
+
+            - else
+              %li= link_to "Log In", signin_path
+              %li= link_to "Sign Up", signup_path, class: "button red"

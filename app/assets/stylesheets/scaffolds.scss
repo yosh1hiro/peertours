@@ -1,13 +1,16 @@
 body {
   background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  color: #777777;
   font-size: 13px;
   line-height: 18px;
 }
 
+h1, h2, h3, h4, h5, h6, body {
+  font-family: "Avenir Next","AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "Avenir Next","AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
