@@ -1,33 +1,91 @@
-%h1 Listing tours
-
-%table
-  %thead
-    %tr
-      %th Host
-      %th Name
-      %th Outline
-      %th Description
-      %th Minimum number
-      %th Maximum number
-      %th Rendezvous
-      %th
-      %th
-      %th
-
-  %tbody
-    - @tours.each do |tour|
-      %tr
-        %td= tour.host_id
-        %td= tour.name
-        %td= tour.outline
-        %td= tour.description
-        %td= tour.minimum_number
-        %td= tour.maximum_number
-        %td= tour.rendezvous
-        %td= link_to 'Show', tour
-        %td= link_to 'Edit', edit_tour_path(tour)
-        %td= link_to 'Destroy', tour, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Tour', new_tour_path
+= render 'shared/header'
+%section.main-hero.search
+  .top-search-results.text-center
+    .contents
+      .search-panel
+        .container-fluid
+          %form.col-md-12.search-form{action: "/", method: "get"}
+            .col-md-12.col-lg-12.form-group
+              %span.form-element
+                %select{name: "category", type: "select", placeholder: "Categoies"}
+                  %option Categories
+                  %option Tradition
+                  %option Sight Seeing
+                %select{name: "area", type: "select", placeholder: "Areas"}
+                  %option Areas
+                  %option Akihabara
+                  %option Asakusa
+                  %option Shibuya
+                %input.submit{type: "submit", value: "Search"}
+          %h4.col-md-12.col-lg-12.search-results-text
+            Search results for category - area  : 12 tours
+.container-fluid
+  .row
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Kyoto
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Asakusa
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-hakone.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Hakone
+  .row
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Kyoto
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Asakusa
+    .col-md-4
+      .testimonials
+        .active.item
+          =link_to image_tag("e-hakone.jpg", class: "section-image"), root_path,class: "link-transparent"
+          .carousel-info
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+            .pull-left
+              %span.testimonials-info
+                Description Description Description Description Description
+              %span.testimonials-title
+                Hakone
+= render 'shared/footer'

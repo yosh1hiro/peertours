@@ -1,3 +1,54 @@
-// Place all the styles related to the tours controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.top-search-results {
+  width: 100%;
+  // height: 510px;
+  margin: 0 auto;
+  padding: 0px 0px 100px 0px;
+  color: #fff;
+}
+
+section.main-hero.search {
+  height: 160px;
+}
+
+.search-results-text {
+  color: #696969;
+  margin-top: 30px;
+}
+
+/* Testimonials for bootsnipp */
+/* http://bootsnipp.com/snippets/featured/responsive-simple-testimonials */
+.testimonials .carousel-info img {
+  border: 1px solid #f5f5f5;
+  border-radius: 150px !important;
+  height: 75px;
+  padding: 3px;
+  width: 75px;
+}
+.testimonials .carousel-info {
+  overflow: hidden;
+  margin-top: 6px;
+}
+.testimonials .carousel-info img {
+  margin-right: 15px;
+}
+.testimonials .carousel-info span {
+  display: block;
+}
+.testimonials span.testimonials-info {
+  width: 220px;
+  color: #656565;
+  font-weight: 400;
+  margin-top: 4px; 
+}
+span.testimonials-info {
+  height: 42px;
+}
+.testimonials span.testimonials-title {
+  width: 100%;
+  color: #fff;
+  background-color: #656565;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+}
