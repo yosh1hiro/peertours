@@ -1,0 +1,62 @@
+= render "shared/header"
+
+%section.first-section.hero-section
+%section.faq-section
+  .container-fluid
+    .row
+      .section-title
+        %h2 PeerTours 101
+    .quotes-list
+      .accordion-items
+        %ul.accordion-group{"aria-multiselectable" => "true", :role => "tablist"}
+          %li.accordion-group-item
+            %a{"aria-controls" => "accordion-content", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => ".faq-1", :role => "button"}
+              .accordion-trigger-thumb.pull-right.faq-1
+              .accordion-trigger{:role => "tab"}
+                %h4.faq-title 
+                  どんな人がガイドになることができますか？
+            .accordion-content.collapse.faq-1{"aria-labelledby" => "accordion-trigger", :role => "tabpanel"}
+              .panel-body
+                日本国内にお住まいの18歳以上の方（国籍問わず）を対象としています。お客様に安心してご利用頂く為に本名での利用と、登録前の担当者面談を必須としております。
+
+          %li.accordion-group-item
+            %a{"aria-controls" => "accordion-content", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => ".faq-2", :role => "button"}
+              .accordion-trigger-thumb.pull-right.faq-2
+              .accordion-trigger{:role => "tab"}
+                %h4.faq-title 
+                  通訳案内士の資格は必要ですか？
+            .accordion-content.collapse.faq-2{"aria-labelledby" => "accordion-trigger", :role => "tabpanel"}
+              .panel-body
+                資格をお持ちの方はもちろん歓迎します。with your guide公式ガイドのお仕事は通訳案内ではなく、企画の立案とそのコーディネート全般です。必ずしも資格はではないため、一定以上の英語力をお持ちでおもてなしを体現したいという意欲のある全ての方からご応募を受け付けています。
+
+          %li.accordion-group-item
+            %a{"aria-controls" => "accordion-content", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => ".faq-3", :role => "button"}
+              .accordion-trigger-thumb.pull-right.faq-3
+              .accordion-trigger{:role => "tab"}
+                %h4.faq-title 
+                  ガイドになるためのステップを教えて下さい。
+            .accordion-content.collapse.faq-3{"aria-labelledby" => "accordion-trigger", :role => "tabpanel"}
+              .panel-body
+                随時説明会、面談を設けております。ガイドをご希望の方は下記メールアドレスまでご連絡下さい。返信メールにて申込フォームと募集要項をお送りします。
+  
+          %li.accordion-group-item
+            %a{"aria-controls" => "accordion-content", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => ".faq-4", :role => "button"}
+              .accordion-trigger-thumb.pull-right.faq-4
+              .accordion-trigger{:role => "tab"}
+                %h4.faq-title 
+                  掲載料はかかりますか？
+            .accordion-content.collapse.faq-4{"aria-labelledby" => "accordion-trigger", :role => "tabpanel"}
+              .panel-body
+                掲載料は無料です。予約が成立した時のみ、with your guideはツアー代金の20％をサービス料として頂きます。報酬を受け取りになる際は、送金手数料～円が差し引かれますので、予めご了承ください。
+
+          %li.accordion-group-item
+            %a{"aria-controls" => "accordion-content", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => ".faq-5", :role => "button"}
+              .accordion-trigger-thumb.pull-right.faq-5
+              .accordion-trigger{:role => "tab"}
+                %h4.faq-title 
+                  報酬の受け取り方法を教えて下さい。
+            .accordion-content.collapse.faq-5{"aria-labelledby" => "accordion-trigger", :role => "tabpanel"}
+              .panel-body
+                銀行振込にてお支払いをしています。公式ガイドの皆様にはマイページ口座情報を登録頂いております。毎月末締めの10日払いです。
+
+= render "shared/footer"

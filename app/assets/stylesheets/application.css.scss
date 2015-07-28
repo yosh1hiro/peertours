@@ -20,5 +20,8 @@
 @import "mixins/space";
 @import "base";
 @import "shared/footer";
+@import "faq";
+@import "buttons";
+@import "shame";
 
 @include make-space;

@@ -6,7 +6,18 @@
         Travel Japan with Local Insiders
       %h4.sub-title.row-space-6.row-space-3
         Find an Unforgettable Experience in Japan
-      =link_to "How to use", root_path, class: "button white"
+      .search-panel
+        .container-fluid
+          %form.col-md-12.search-form{action: "/", method: "get"}
+            .col-md-7.col-lg-7.form-group
+              %span.form-element
+                %select{name: "category", type: "select", placeholder: "Categoies"}
+                  %option Categories
+                  %option Tradition
+                  %option Sight Seeing
+                %select{name: "area", type: "select", placeholder: "Areas"}
+
+
       %form.search-tours{action: "/", method: "get"}
         %input{name: "category", size: "20"}
         %input{name: "area", size: "16"}

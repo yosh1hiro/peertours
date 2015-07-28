@@ -10,9 +10,15 @@
         #navbar.navbar-collapse.collapse
           %ul.nav.navbar-nav.navbar-right
             - if signed_in?
-              %li= link_to "Profile", current_user
-              %li= link_to "Sign Out", signout_path
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  = current_user.first_name
+                  %b.caret.white-caret
+                %ul.dropdown-menu
+                  %li= link_to "Profile", current_user
+                  %li.menu-divider
+                  %li= link_to "Sign out", signout_path
+
             - else
               %li= link_to "Log In", signin_path
-              %li= link_to "Sign Up", signup_path
-              %li= link_to "Become a Guide", signup_path, class: "button red"
+              %li= link_to "Sign Up", signup_path, class: "button red"

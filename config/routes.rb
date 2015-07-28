@@ -14,17 +14,16 @@ Rails.application.routes.draw do
   resources :tours
 
   scope path: '/', controller: :home do
-    get 'about', action: :about
+    get 'peertours101', action: :about, as: :about
     get 'terms', action: :terms
     get 'privacy', action: :privacy
-    get 'how-it-works', action: :how_it_works
-    get 'why_peertours', action: :why_peertours
+    # get 'how-it-works', action: :how_it_works
+    # get 'why_peertours', action: :why_peertours
     get 'cancellation-policies', action: :cancellation_policies
     get 'help-for-travellers', action: :help_for_travellers
     get 'help-for-guides', action: :help_for_guides
-    get 'why-guide', action: :why_guide
-    get 'become-guide', action: :become_guide
-
+    # get 'why-guide', action: :why_guide
+    # get 'become-guide', action: :become_guide
     # get 'news', action: :news
   end
 
