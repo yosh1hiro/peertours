@@ -177,11 +177,12 @@ a.link-transparent:hover {
   background-color: #BF1329;
   border: 0px solid #fff;
   border-bottom: 3px solid #9A0E21;
+  .button-text {
+    padding-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
 }
 
-.button-text {
-  padding-top: 10px;
-  font-size: 2rem;
-  text-align: center;
-  color: #fff;
-}
+
