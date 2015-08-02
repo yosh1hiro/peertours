@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :messages
+  resources :references
+  resources :reviews
+  resources :reservations
   root 'home#index'
 
   get '/signup', to: 'users#new', as: :signup
@@ -7,6 +11,24 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :tours
+
+  scope path: '/', controller: :home do
+    get 'peertours101', action: :about, as: :about
+    get 'terms', action: :terms
+    get 'privacy', action: :privacy
+    # get 'how-it-works', action: :how_it_works
+    # get 'why_peertours', action: :why_peertours
+    get 'cancellation-policies', action: :cancellation_policies
+    get 'help-for-travellers', action: :help_for_travellers
+    get 'help-for-guides', action: :help_for_guides
+    # get 'why-guide', action: :why_guide
+    # get 'become-guide', action: :become_guide
+    # get 'news', action: :news
+  end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

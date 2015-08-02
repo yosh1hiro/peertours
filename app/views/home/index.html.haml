@@ -1,2 +1,126 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+%section.index-header
+  = render 'shared/header'
+%section.main-hero
+  .top-image.text-center
+    .contents
+      %h1
+        Travel Japan with Local Insiders
+      %h4.sub-title.row-space-6.row-space-3.hide-sm
+        Find an Unforgettable Experience in Japan
+      .search-panel
+        .container-fluid
+          %form.col-md-12.search-form{action: "/", method: "get"}
+            .col-md-12.col-lg-12.form-group
+              %span.form-element
+                %select{name: "category", type: "select", placeholder: "Categoies"}
+                  %option Categories
+                  %option Tradition
+                  %option Sight Seeing
+                %select{name: "area", type: "select", placeholder: "Areas"}
+                  %option Areas
+                  %option Akihabara
+                  %option Asakusa
+                  %option Shibuya
+                %input.submit{type: "submit", value: "Search"}
+.container-fluid
+  .row
+    .row
+      .col-md-4.col-md-offset-4.section-title
+        %h2
+          Categories
+    .row
+      .col-md-4.image-frame
+        =link_to image_tag("scenery.jpg", class: "section-image"), root_path,class: "link-transparent"
+        .row-1st-in
+          .title-label
+            Scenery
+      .col-md-4.image-frame
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("gourmet.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Gourmet
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("anime.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Anime
+      .col-md-4.image-frame
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("tradition.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Tradition
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("idol.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Idol
+  .row
+    .row
+      .col-md-4.col-md-offset-4.section-title
+        %h2
+          Areas
+    .row
+      .col-md-4.image-frame
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Asakusa
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("hokkaidou.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Hokkaidou
+      .col-md-4.image-frame
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("akihabara.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Akihabara
+        .row
+          .col-md-12.image-frame
+            =link_to image_tag("osaka.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .row-1st-in
+              .title-label
+                Osaka
+      .col-md-4.image-frame
+        =link_to image_tag("kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+        .row-1st-in
+          .title-label
+            Kyoto
+  .row
+    .row
+      .col-md-4.col-md-offset-4.section-title
+        %h2
+          Popular Experiences
+    .row
+      .col-md-4.image-frame.row-1st
+        =link_to image_tag("e-kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+        .row-1st-in
+          .title-label
+            Kyoto
+      .col-md-4.image-frame
+        =link_to image_tag("e-asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+        .row-1st-in
+          .title-label
+            Asakusa
+      .col-md-4.image-frame
+        =link_to image_tag("e-hakone.jpg", class: "section-image"), root_path,class: "link-transparent"
+        .row-1st-in
+          .title-label
+            Hakone
+  .row
+    .more-button
+      =link_to root_path,class: "link-transparent" do
+        .button-text
+          more
+= render 'shared/footer'

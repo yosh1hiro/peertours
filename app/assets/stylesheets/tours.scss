@@ -1,0 +1,331 @@
+.top-search-results {
+  width: 100%;
+  // height: 510px;
+  margin: 0 auto;
+  padding: 0px 0px 100px 0px;
+  color: #fff;
+}
+
+section.main-hero.search {
+  height: 160px;
+}
+
+.search-results-text {
+  color: #696969;
+  margin-top: 30px;
+}
+
+/* mini-description for bootsnipp */
+/* http://bootsnipp.com/snippets/featured/responsive-simple-mini-description */
+.mini-description .carousel-info img {
+  border: 1px solid #f5f5f5;
+  border-radius: 150px !important;
+  height: 75px;
+  padding: 3px;
+  width: 75px;
+}
+.mini-description .carousel-info {
+  overflow: hidden;
+  margin-top: 6px;
+}
+.mini-description .carousel-info img {
+  margin-right: 15px;
+}
+.mini-description .carousel-info span {
+  display: block;
+}
+.mini-description span.mini-description-info {
+  width: 220px;
+  color: #656565;
+  font-weight: 400;
+  margin-top: 4px; 
+}
+span.mini-description-info {
+  height: 42px;
+}
+.mini-description span.mini-description-title {
+  width: 100%;
+  color: #fff;
+  background-color: #656565;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+}
+
+
+
+/* tours show page style */
+.tour-detail {
+  
+  /* main contents style */
+  .col-md-9 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .description {
+    margin: 60px auto;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 14px 10px;
+  }
+
+  h3.point {
+    margin-left: 10px;
+  }
+  .point-title {
+    border-bottom: 2px solid #727272;
+  }
+  .point-body {
+    padding: 14px 10px;
+  }
+
+  .reserve-box {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 40px auto;
+    line-height: 2.5em;
+    .price {
+      border-right: 2px solid #A0A0A0;
+      padding: 0 10px;
+    }
+    span.red {
+      font-size: 20px;
+      font-weight: 600;
+      color: #BF1329;
+    }
+    .time {
+      padding: 0 10px;
+    }
+    .reserve-button {
+      background-color: #BF1329;
+      border: 0px solid #fff;
+      border-bottom: 3px solid #9A0E21;
+      .button-text {
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+
+  .about-this-tour {
+    margin-top: 240px;
+    margin-bottom: 60px;
+  }
+  .voice {
+    background-color: #FCFCFC;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 14px 10px;
+    text-align: center;
+    .guide-pic-size {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+
+  .reserve-form {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    form.col-md-12.search-form {
+      height: 100%;
+      border-radius: 4px;
+      float: left;
+      width: 100%;
+      padding: 1.3em 0;
+    }
+    .search-panel {
+      width: 100%;
+      .container-fluid {
+        max-width: 500px;
+        .form-group {
+          margin-top: 0;
+          margin-bottom: 0;
+          position: relative;
+          .form-control {
+            border: 1px solid #777777;
+          }
+        }
+      }
+      .form-element {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        direction: ltr;
+      }
+    }
+    select {
+      font-weight: 400;
+      font-size: 0.9em;
+      width: 220px;
+      height: 30px;
+      color: #777777;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      margin-right: 20px;
+      -webkit-appearance: none;
+    }
+    input {
+      font-weight: 400;
+      font-size: 0.9em;
+      width: 220px;
+      height: 30px;
+      color: #777777;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      margin-right: 20px;
+      -webkit-appearance: none;
+    }
+    span.total-price.left {
+      font-size: 20px;
+    }
+    span.red {
+      font-size: 26px;
+      font-weight: 600;
+      color: #BF1329;
+      margin-left: 10px;
+    }
+    .submit {
+      font-weight: 500;
+      font-size: 1.8em;
+      width: 100%;
+      height: 40px;
+      color: #fff;
+      background-color: #BF1329;
+      border: 1px solid #BF1329;
+      border-radius: 0;
+      margin-top: 20px;
+      border: 0px solid #fff;
+      border-bottom: 3px solid #9A0E21;
+      .button-text {
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+
+  /* Main carousel style */
+  .carousel {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+  /* Indicators list style */
+  .article-slide .carousel-indicators {
+      bottom: 0;
+      left: 0;
+      margin-left: 5px;
+      width: 100%;
+  }
+  /* Indicators list style */
+  .article-slide .carousel-indicators li {
+      border: medium none;
+      border-radius: 0;
+      float: left;
+      height: 54px;
+      margin-bottom: 5px;
+      margin-left: 0;
+      margin-right: 5px !important;
+      margin-top: 0;
+      width: 100px;
+  }
+  /* Indicators images style */
+  .article-slide .carousel-indicators img {
+      border: 2px solid #FFFFFF;
+      float: left;
+      height: 54px;
+      left: 0;
+      width: 100px;
+  }
+  /* Indicators active image style */
+  .article-slide .carousel-indicators .active img {
+      border: 2px solid #428BCA;
+      opacity: 0.7;
+  }
+
+  /* side menu style */
+  .side-contents {
+    background-color: #FCFCFC;
+    /*
+    .top-tags {
+      color: #fff;
+      text-align: center;
+      .location {
+        padding: 0px;
+        p.textarea {
+          background-color: #BF1329;
+        }
+      }
+      .category {
+        padding: 0px;
+        p.textarea {
+          background-color: #BF1329;
+        }
+      }
+    }
+    */
+
+    .guide-name {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 400;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    .guide-pic {
+      margin: 0 auto;
+      text-align: center;
+      img.guide-pic-size {
+        max-width: 80%;
+      }
+    }
+    .guide-description {
+      margin: 20px 10px;
+    }
+
+    .mini-reserve-box {
+      margin: 20px -15px;
+      line-height: 2.5em;
+      text-align: center;
+      .price {
+        padding: 0 10px;
+      }
+      span.red {
+        font-size: 20px;
+        font-weight: 600;
+        color: #BF1329;
+      }
+      .time {
+        padding: 0 10px;
+      }
+    }
+    .mini-reserve-button {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 30px;
+      background-color: #BF1329;
+      border: 0px solid #fff;
+      border-bottom: 3px solid #9A0E21;
+      line-height: 2.0em;
+      .button-text {
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+

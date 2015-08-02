@@ -1,0 +1,148 @@
+= render 'shared/header'
+%section.tour-detail
+  .container-fluid
+    .row.contents-top
+      %h1.text-center
+        Tour Title
+    .row
+      .col-md-9
+        #article-photo-carousel.carousel.slide.article-slide
+          / Wrapper for slides
+          .carousel-inner.cont-slider
+            .item.active
+              =image_tag "guide-pic-sample.jpg" # 画像のりサイズをRails側でお願いしたいです。
+            .item
+              =image_tag "http://placehold.it/600x400"
+            .item
+              =image_tag "http://placehold.it/600x400"
+            .item
+              =image_tag "http://placehold.it/600x400"
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#article-photo-carousel"}
+              =image_tag "http://placehold.it/250x180"
+            %li{"data-slide-to" => "1", "data-target" => "#article-photo-carousel"}
+              =image_tag "http://placehold.it/250x180"
+            %li{"data-slide-to" => "2", "data-target" => "#article-photo-carousel"}
+              =image_tag "http://placehold.it/250x180"
+            %li{"data-slide-to" => "3", "data-target" => "#article-photo-carousel"}
+              =image_tag "http://placehold.it/250x180"
+        .description
+          description description description description description description description description description 
+          description description description description description description description description description 
+          description description description description description description description description description
+        .point-title
+          %h3.point
+            旅のおすすめポイントはここです！
+        .point-body
+          text text text text text text text text text text text text text text text text text text text text text text 
+          text text text text text text text text text text text text text text text text text text text text text 
+          text text text text text text text text text text text text text text text text text text text text
+        .point-title
+          %h3.point
+            旅のおすすめポイントはここです！
+        .point-body
+          text text text text text text text text text text text text text text text text text text text text text text 
+          text text text text text text text text text text text text text text text text text text text text text 
+          text text text text text text text text text text text text text text text text text text text text
+        .col-md-12.reserve-box
+          .col-md-5
+            %span.price
+              %span.red
+                $50
+              \/ each 
+            %span.time
+              %span.red
+                3
+              hours
+              %i
+                [the time required]
+            .reserve-button
+              =link_to root_path,class: "link-transparent" do
+                .button-text
+                  Request reserve
+          .col-md-7.social
+            // 後ほど
+        .about-this-tour
+          %h2.text-center
+            About this tour
+          %table.table.table-bordered
+            %tbody
+              %tr
+                %th.col-xs-4.col-sm-4.col-md-4.active
+                  Included
+                %td.col-xs-8.col-sm-8.col-md-8
+                  hoge hoge
+                  %br
+                  hoge hoge
+                  %br
+                  hoge hoge
+                  %br
+                  hoge hoge
+              %tr
+                %th.col-xs-4.col-sm-4.col-md-4.active
+                  Required number of persons
+                %td.col-xs-8.col-sm-8.col-md-8
+                  3
+              %tr
+                %th.col-xs-4.col-sm-4.col-md-4.active
+                  The meeting-location
+                %td.col-xs-8.col-sm-8.col-md-8
+                  Here
+        %h2.text-center
+          Voice from Host
+        .col-md-12.voice
+          .col-md-3
+            =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent"
+          .col-md-9
+            hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge hogehoge
+        .col-md-12.reserve-form
+          %h2.text-center
+            Reserve
+          .search-panel
+            %form.search-form{action: "/", method: "get"}
+              .form-group
+                %span.form-element
+                  %input{name: "date", type: "date", placeholder: "Date"}
+                  %select{name: "persons", type: "select", placeholder: "How many persons"}
+                    %option 3
+                    %option 4
+                    %option 5
+                    %option 6
+                  %span.total-price.left
+                    Total 
+                    %span.red
+                      $50
+                  .reserve-button
+                    %input.submit{type: "submit", value: "Reserve"}
+      .col-md-3
+        .sidebar-nav.side-contents
+          / .top-tags
+          /   .col-md-6.location
+          /     %p.textarea
+          /       Tokyo
+          /   .col-md-6.category
+          /     %p.textarea
+          /       Food
+          .guide-name
+            Shinya Hirai
+          .guide-pic
+            =image_tag "guide-pic-sample.jpg", class: "img-circle guide-pic-size"
+          .guide-description
+            hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge hoge
+          .mini-reserve-box
+            .price
+              %span.red
+                $50
+              \/ each
+            .time
+              %span.red
+                3
+              hours
+              %i
+                [the time required]
+          .mini-reserve-button
+            =link_to root_path,class: "link-transparent" do
+              .button-text
+                Request reserve
+= render 'shared/footer'

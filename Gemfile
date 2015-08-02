@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
@@ -13,18 +11,17 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'twitter-bootswatch-rails', '~> 3.1.1'
-gem 'twitter-bootswatch-rails-helpers'
-gem 'execjs'
-gem 'less-rails'
 gem 'therubyracer', platforms: :ruby # javascript runtime。lessをコンパイルす>るために必要
+gem 'bootstrap-sass' # Bootstrapの本体
+gem "font-awesome-rails"
+
 gem 'haml-rails'
-gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれてい>るため
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

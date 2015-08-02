@@ -1,0 +1,92 @@
+= render 'shared/header'
+%section.section-tours
+  %section.main-hero.search
+    .top-search-results.text-center
+      .contents
+        .search-panel
+          .container-fluid
+            %form.col-md-12.search-form{action: "/", method: "get"}
+              .col-md-12.col-lg-12.form-group
+                %span.form-element
+                  %select{name: "category", type: "select", placeholder: "Categoies"}
+                    %option Categories
+                    %option Tradition
+                    %option Sight Seeing
+                  %select{name: "area", type: "select", placeholder: "Areas"}
+                    %option Areas
+                    %option Akihabara
+                    %option Asakusa
+                    %option Shibuya
+                  %input.submit{type: "submit", value: "Search"}
+            %h4.col-md-12.col-lg-12.search-results-text
+              Search results for category - area  : 12 tours
+  .container-fluid
+    .row
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Kyoto
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Asakusa
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-hakone.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Hakone
+    .row
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-kyoto.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Kyoto
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-asakusa.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Asakusa
+      .col-md-4
+        .mini-description
+          .active.item
+            =link_to image_tag("e-hakone.jpg", class: "section-image"), root_path,class: "link-transparent"
+            .carousel-info
+              =link_to image_tag("guide-pic-sample.jpg", class: "img-circle guide-pic-size"), root_path,class: "link-transparent pull-left"
+              .pull-left
+                %span.mini-description-info
+                  Description Description Description Description Description
+                %span.mini-description-title
+                  Hakone
+= render 'shared/footer'

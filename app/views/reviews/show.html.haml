@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Trip:
+  = @review.trip_id
+%p
+  %b User:
+  = @review.user_id
+%p
+  %b Tour:
+  = @review.tour_id
+%p
+  %b Body:
+  = @review.body
+%p
+  %b Rating:
+  = @review.rating
+
+= link_to 'Edit', edit_review_path(@review)
+\|
+= link_to 'Back', reviews_path
